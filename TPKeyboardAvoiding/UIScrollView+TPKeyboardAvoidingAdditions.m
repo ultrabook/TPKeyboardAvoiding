@@ -42,7 +42,7 @@ static const int kStateKey;
 - (void)TPKeyboardAvoiding_keyboardWillShow:(NSNotification*)notification {
     TPKeyboardAvoidingState *state = self.keyboardAvoidingState;
     
-    if ( state.keyboardVisible && (stat.keyboardRect.size.height != 0.0)) {
+    if ( state.keyboardVisible && (state.keyboardRect.size.height != 0.0)) {
         return;
     }
     
